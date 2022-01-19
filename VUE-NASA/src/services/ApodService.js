@@ -8,7 +8,7 @@ const nasaApi = Axios.create({
 
 class APODService {
     async searchAPOD(searchDate) {
-        const res = await nasaApi(`apod?query=${searchDate}&api_key=${apiKey}`)
+        const res = await nasaApi(`apod?date=${searchDate}&api_key=${apiKey}`)
         console.log('testing', res)
     }
 
